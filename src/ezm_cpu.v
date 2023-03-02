@@ -22,7 +22,7 @@ reg [7:0] bank[7:0];
 reg bflag;
 integer i; 
 
-always @(rst ,posedge clk)begin 
+always @(posedge clk)begin 
      if (rst)begin
           for (i=0;i<8;i=i+1)begin
           bank[i] <= 8'b00000000;
