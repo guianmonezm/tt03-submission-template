@@ -1,13 +1,13 @@
 --- 
 # TinyTapeout project information
- project:
-  wokwi_id:    0        # If using wokwi, set this to your project's ID
+project:
+ wokwi_id:    0        # If using wokwi, set this to your project's ID
 
 # If using an HDL, set wokwi_id as 0 and uncomment and list your source files here. 
 # Source files must be in ./src and you must list each source file separately
- source_files:        
-   - top.v
- top_module:  "guianmonezm_ezmcpu"      # put the name of your top module here, make it unique by prepending your github username
+source_files:        
+  - top.v
+top_module:  "guianmonezm_ezmcpu"      # put the name of your top module here, make it unique by prepending your github username
 
 # Keep a track of the submission yaml
 yaml_version: 3.0
