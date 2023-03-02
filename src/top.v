@@ -1,4 +1,4 @@
-module top (pins_in ,pins_out);
+module guianmonezm_ezmcpu (pins_in ,pins_out);
 input [7:0] pins_in;
 output [7:0] pins_out;
 
