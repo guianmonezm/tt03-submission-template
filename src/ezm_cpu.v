@@ -1,4 +1,4 @@
-module ezm_cpu(in_i,clk,rst,out_o);
+module guianmonezm_ezmcpu(in_i,clk,rst,out_o);
 input [5:0] in_i;
 input clk,rst;
 output wire [7:0]out_o;
@@ -42,17 +42,7 @@ always @(posedge clk)begin
           
           6'b011???:
           instruction<=3'b010; //conditional branch
-          
-          6'b001???:
-          instruction<=3'b011;//stra
-
-          6'b010???:
-          instruction<=3'b100;//add
-          
-          6'b000001: 
-          instruction<=3'b101;
-          default:instruction<=3'b000;
-     endcase
+          ezm_cpu
      state<=1'b1;
      end 
 
