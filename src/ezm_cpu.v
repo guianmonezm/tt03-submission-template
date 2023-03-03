@@ -1,4 +1,17 @@
-module guianmonezm_ezmcpu(in_i,clk,rst,out_o);
+
+module guianmonezm_ezmcpu (io_in ,io_out);
+input [7:0] io_in;
+output [7:0] io_out;
+
+ezm_cpu cpu_top(
+     .clk(io_in[0]),
+     .rst(io_in[1]),
+     .in_i(io_in[7:2]),
+     .out_o(io_out[7:0])
+);
+endmodule
+
+module ezm_cpu(in_i,clk,rst,out_o);
 input [5:0] in_i;
 input clk,rst;
 output wire [7:0]out_o;
